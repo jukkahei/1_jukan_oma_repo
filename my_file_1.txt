@@ -1,1 +1,2 @@
 rivi 1
+rivi 2 lisätty 1 commitin jälkeen
