@@ -1,6 +1,7 @@
 rivi 1
-rivi 2 lis‰tty 1 commitin j‰lkeen
-rivi 3 lis‰tty
-rivi 4.1 lis‰tty
-lis‰tty rivi 5 ehk‰ omaan brachiiin meibii
-rivi 6 t‰ss‰ /*~
+rivi 2 lis√§tty 1 commitin j√§lkeen
+rivi 3 lis√§tty
+rivi 4.1 lis√§tty
+lis√§tty rivi 5 ehk√§ omaan brachiiin meibii
+rivi 6 t√§ss√§ /*~
+m1 T√ÑSS√Ñ OMAAN BR√ÑNSHIIN MUUTOS joka merget√§√§n master branchiin t√§ss√§
