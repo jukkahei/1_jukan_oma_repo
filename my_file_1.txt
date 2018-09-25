@@ -6,3 +6,4 @@ lisätty rivi 5 ehkä omaan brachiiin meibii
 rivi 6 tässä /*~
 m1 TÄSSÄ OMAAN BRÄNSHIIN MUUTOS joka mergetään master branchiin tässä
 Lisätty rivi 7
+lis riv 8
