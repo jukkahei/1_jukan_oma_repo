@@ -2,10 +2,3 @@
 rivi 2 lisätty 1 commitin jälkeen
 rivi 3 lisätty
 rivi 4.1 lisätty
-lisätty rivi 5 ehkä omaan brachiiin meibii
-rivi 6 tässä /*~
-m1 TÄSSÄ OMAAN BRÄNSHIIN MUUTOS joka mergetään master branchiin tässä
-Lisätty rivi 7
-lis riv 8
-rivi 9 täs
-r10
