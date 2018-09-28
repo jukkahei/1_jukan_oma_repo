@@ -2,3 +2,4 @@
 rivi 2 lisätty 1 commitin jälkeen
 rivi 3 lisätty
 rivi 4.1 lisätty
+rivi 5 lisätty jenkinssin liipaisu testiä varte
