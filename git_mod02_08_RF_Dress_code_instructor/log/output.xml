@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220817 15:04:01.792" rpa="false" schemaversion="3">
+<suite id="s1" name="08 Dress Code instructor for outdoor" source="C:\Users\ajukkhei\TIETO\Testiautomaatio\oma_harjoittelu_08_2022\mod02_08_RF_Dress_code_instructor\test_suites\08_Dress_Code_instructor_for_outdoor.robot">
+<kw name="Initialize" type="SETUP">
+<msg timestamp="20220817 15:04:02.291" level="TRACE">Arguments: [  ]</msg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${WEB_PAGE}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220817 15:04:02.291" level="TRACE">Arguments: [ 'https://en.ilmatieteenlaitos.fi/' | browser='chrome' ]</msg>
+<msg timestamp="20220817 15:04:02.292" level="INFO">Opening browser 'chrome' to base url 'https://en.ilmatieteenlaitos.fi/'.</msg>
+<msg timestamp="20220817 15:04:04.232" level="DEBUG">POST http://localhost:54647/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": []}}}}</msg>
+<msg timestamp="20220817 15:04:04.235" level="DEBUG">Starting new HTTP connection (1): localhost:54647</msg>
+<msg timestamp="20220817 15:04:05.719" level="DEBUG">http://localhost:54647 "POST /session HTTP/1.1" 200 791</msg>
+<msg timestamp="20220817 15:04:05.722" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"104.0.5112.102","chrome":{"chromedriverVersion":"104.0.5112.79 (3cf3e8c8a07d104b9e1260c910efb8f383285dc5-refs/branch-heads/5112@{#1307})","userDataDir":"C:\\Users\\ajukk\\AppData\\Local\\Temp\\scoped_dir3616_1054045702"},"goog:chromeOptions":{"debuggerAddress":"localhost:54651"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"windows","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"370eb6132e1b1dabe02c1f5b5f8d4177"}} | headers=HTTPHeaderDict({'Content-Length': '791', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:05.722" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:05.723" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/timeouts {"script": 5000}</msg>
+<msg timestamp="20220817 15:04:05.726" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20220817 15:04:05.727" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:05.727" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:05.727" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/timeouts {"implicit": 2000}</msg>
+<msg timestamp="20220817 15:04:05.730" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20220817 15:04:05.730" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:05.730" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:05.731" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/url {"url": "https://en.ilmatieteenlaitos.fi/"}</msg>
+<msg timestamp="20220817 15:04:08.785" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20220817 15:04:08.786" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:08.786" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:08.786" level="DEBUG">Opened browser with session id 370eb6132e1b1dabe02c1f5b5f8d4177.</msg>
+<msg timestamp="20220817 15:04:08.786" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220817 15:04:02.291" endtime="20220817 15:04:08.786"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<msg timestamp="20220817 15:04:08.787" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220817 15:04:08.787" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/window/maximize {}</msg>
+<msg timestamp="20220817 15:04:08.940" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/window/maximize HTTP/1.1" 200 51</msg>
+<msg timestamp="20220817 15:04:08.940" level="DEBUG">Remote response: status=200 | data={"value":{"height":876,"width":1616,"x":-8,"y":-8}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:08.940" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:08.941" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:08.787" endtime="20220817 15:04:08.941"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220817 15:04:08.942" level="TRACE">Arguments: [ '1s' ]</msg>
+<msg timestamp="20220817 15:04:09.956" level="INFO">Slept 1 second</msg>
+<msg timestamp="20220817 15:04:09.956" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:08.941" endtime="20220817 15:04:09.957"/>
+</kw>
+<msg timestamp="20220817 15:04:09.957" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:02.290" endtime="20220817 15:04:09.958"/>
+</kw>
+<test id="s1-t1" name="Ask info from the user" line="26">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ajukkhei test log 1 ${BROWSER}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220817 15:04:09.965" level="TRACE">Arguments: [ 'ajukkhei test log 1 chrome' ]</msg>
+<msg timestamp="20220817 15:04:09.965" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:09.963" endtime="20220817 15:04:09.965"/>
+</kw>
+<kw name="Get Value From User" library="Dialogs">
+<var>${ASKED_USERNAME}</var>
+<arg>Give some google mail username (needed for smtp mailserver.login)</arg>
+<arg>ajukkhei@gmail.com</arg>
+<doc>Pauses execution and asks user to input a value.</doc>
+<msg timestamp="20220817 15:04:09.967" level="TRACE">Arguments: [ 'Give some google mail username (needed for smtp mailserver.login)' | 'ajukkhei@gmail.com' ]</msg>
+<msg timestamp="20220817 15:04:20.089" level="TRACE">Return: 'ajukkhei@gmail.com'</msg>
+<msg timestamp="20220817 15:04:20.090" level="INFO">${ASKED_USERNAME} = ajukkhei@gmail.com</msg>
+<status status="PASS" starttime="20220817 15:04:09.966" endtime="20220817 15:04:20.090"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${ASKED_PASSWORD}</arg>
+<arg>sdyupgulgrwkxynd</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:20.091" level="TRACE">Arguments: [ '${ASKED_PASSWORD}' | 'sdyupgulgrwkxynd' ]</msg>
+<msg timestamp="20220817 15:04:20.096" level="INFO">${ASKED_PASSWORD} = sdyupgulgrwkxynd</msg>
+<msg timestamp="20220817 15:04:20.096" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:20.091" endtime="20220817 15:04:20.096"/>
+</kw>
+<kw name="Get Value From User" library="Dialogs">
+<var>${ASKED_TARGET_EMAIL_ADDRESS}</var>
+<arg>Give email address which weather and clothing info will be sent</arg>
+<arg>ajukkhei@gmail.com</arg>
+<doc>Pauses execution and asks user to input a value.</doc>
+<msg timestamp="20220817 15:04:20.100" level="TRACE">Arguments: [ 'Give email address which weather and clothing info will be sent' | 'ajukkhei@gmail.com' ]</msg>
+<msg timestamp="20220817 15:04:20.904" level="TRACE">Return: 'ajukkhei@gmail.com'</msg>
+<msg timestamp="20220817 15:04:20.905" level="INFO">${ASKED_TARGET_EMAIL_ADDRESS} = ajukkhei@gmail.com</msg>
+<status status="PASS" starttime="20220817 15:04:20.098" endtime="20220817 15:04:20.905"/>
+</kw>
+<kw name="Get Value From User" library="Dialogs">
+<var>${ASKED_LOCATION}</var>
+<arg>Give Location</arg>
+<doc>Pauses execution and asks user to input a value.</doc>
+<msg timestamp="20220817 15:04:20.906" level="TRACE">Arguments: [ 'Give Location' ]</msg>
+<msg timestamp="20220817 15:04:26.675" level="TRACE">Return: 'Siuntio'</msg>
+<msg timestamp="20220817 15:04:26.675" level="INFO">${ASKED_LOCATION} = Siuntio</msg>
+<status status="PASS" starttime="20220817 15:04:20.905" endtime="20220817 15:04:26.675"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${USERNAME}</arg>
+<arg>${ASKED_USERNAME}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:26.677" level="TRACE">Arguments: [ '${USERNAME}' | '${ASKED_USERNAME}' ]</msg>
+<msg timestamp="20220817 15:04:26.680" level="INFO">${USERNAME} = ajukkhei@gmail.com</msg>
+<msg timestamp="20220817 15:04:26.680" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:26.676" endtime="20220817 15:04:26.680"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${PASSWORD}</arg>
+<arg>${ASKED_PASSWORD}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:26.681" level="TRACE">Arguments: [ '${PASSWORD}' | '${ASKED_PASSWORD}' ]</msg>
+<msg timestamp="20220817 15:04:26.684" level="INFO">${PASSWORD} = sdyupgulgrwkxynd</msg>
+<msg timestamp="20220817 15:04:26.684" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:26.681" endtime="20220817 15:04:26.685"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${TARGET_EMAIL_ADDRESS}</arg>
+<arg>${ASKED_TARGET_EMAIL_ADDRESS}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:26.685" level="TRACE">Arguments: [ '${TARGET_EMAIL_ADDRESS}' | '${ASKED_TARGET_EMAIL_ADDRESS}' ]</msg>
+<msg timestamp="20220817 15:04:26.687" level="INFO">${TARGET_EMAIL_ADDRESS} = ajukkhei@gmail.com</msg>
+<msg timestamp="20220817 15:04:26.688" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:26.685" endtime="20220817 15:04:26.688"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${LOCATION}</arg>
+<arg>${ASKED_LOCATION}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:26.688" level="TRACE">Arguments: [ '${LOCATION}' | '${ASKED_LOCATION}' ]</msg>
+<msg timestamp="20220817 15:04:26.691" level="INFO">${LOCATION} = Siuntio</msg>
+<msg timestamp="20220817 15:04:26.691" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:26.688" endtime="20220817 15:04:26.691"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220817 15:04:26.692" level="TRACE">Arguments: [ '2s' ]</msg>
+<msg timestamp="20220817 15:04:28.699" level="INFO">Slept 2 seconds</msg>
+<msg timestamp="20220817 15:04:28.699" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:26.691" endtime="20220817 15:04:28.699"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" starttime="20220817 15:04:09.959" endtime="20220817 15:04:28.700"/>
+</test>
+<test id="s1-t2" name="Set location" line="53">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LOCATION_FIELD_ID}</arg>
+<arg>${LOCATION}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220817 15:04:28.778" level="TRACE">Arguments: [ '//*[@id="header-search-location-field"]' | 'Siuntio' ]</msg>
+<msg timestamp="20220817 15:04:28.778" level="INFO">Typing text 'Siuntio' into text field '//*[@id="header-search-location-field"]'.</msg>
+<msg timestamp="20220817 15:04:28.779" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/elements {"using": "xpath", "value": "//*[@id=\"header-search-location-field\"]"}</msg>
+<msg timestamp="20220817 15:04:28.799" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20220817 15:04:28.799" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"d36ade81-f8db-4e4d-8f78-ecad18539855"}]} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:28.800" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:28.800" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/d36ade81-f8db-4e4d-8f78-ecad18539855/clear {"id": "d36ade81-f8db-4e4d-8f78-ecad18539855"}</msg>
+<msg timestamp="20220817 15:04:28.843" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/d36ade81-f8db-4e4d-8f78-ecad18539855/clear HTTP/1.1" 200 14</msg>
+<msg timestamp="20220817 15:04:28.844" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:28.844" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:28.844" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/d36ade81-f8db-4e4d-8f78-ecad18539855/value {"text": "Siuntio", "value": ["S", "i", "u", "n", "t", "i", "o"], "id": "d36ade81-f8db-4e4d-8f78-ecad18539855"}</msg>
+<msg timestamp="20220817 15:04:28.952" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/d36ade81-f8db-4e4d-8f78-ecad18539855/value HTTP/1.1" 200 14</msg>
+<msg timestamp="20220817 15:04:28.952" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:28.953" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:28.953" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:28.705" endtime="20220817 15:04:28.953"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220817 15:04:28.953" level="TRACE">Arguments: [ '2s' ]</msg>
+<msg timestamp="20220817 15:04:30.966" level="INFO">Slept 2 seconds</msg>
+<msg timestamp="20220817 15:04:30.966" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:28.953" endtime="20220817 15:04:30.967"/>
+</kw>
+<status status="PASS" starttime="20220817 15:04:28.702" endtime="20220817 15:04:30.967"/>
+</test>
+<test id="s1-t3" name="Test Libary Keywords" line="59">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//html/body/div/div/div/div[2]/div/div/header/div/div[2]/div/div[2]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220817 15:04:30.974" level="TRACE">Arguments: [ '//html/body/div/div/div/div[2]/div/div/header/div/div[2]/div/div[2]/button' ]</msg>
+<msg timestamp="20220817 15:04:30.974" level="INFO">Clicking button '//html/body/div/div/div/div[2]/div/div/header/div/div[2]/div/div[2]/button'.</msg>
+<msg timestamp="20220817 15:04:30.975" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/elements {"using": "xpath", "value": "//html/body/div/div/div/div[2]/div/div/header/div/div[2]/div/div[2]/button"}</msg>
+<msg timestamp="20220817 15:04:31.023" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20220817 15:04:31.024" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"6bed1804-8e40-45c5-8c22-daf5ea32e3d4"}]} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:31.025" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:31.025" level="DEBUG">GET http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/6bed1804-8e40-45c5-8c22-daf5ea32e3d4/name {"id": "6bed1804-8e40-45c5-8c22-daf5ea32e3d4"}</msg>
+<msg timestamp="20220817 15:04:31.041" level="DEBUG">http://localhost:54647 "GET /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/6bed1804-8e40-45c5-8c22-daf5ea32e3d4/name HTTP/1.1" 200 18</msg>
+<msg timestamp="20220817 15:04:31.042" level="DEBUG">Remote response: status=200 | data={"value":"button"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:31.042" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:31.043" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/elements {"using": "xpath", "value": "//html/body/div/div/div/div[2]/div/div/header/div/div[2]/div/div[2]/button"}</msg>
+<msg timestamp="20220817 15:04:31.069" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20220817 15:04:31.070" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"6bed1804-8e40-45c5-8c22-daf5ea32e3d4"}]} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:31.070" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:31.071" level="DEBUG">GET http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/6bed1804-8e40-45c5-8c22-daf5ea32e3d4/name {"id": "6bed1804-8e40-45c5-8c22-daf5ea32e3d4"}</msg>
+<msg timestamp="20220817 15:04:31.082" level="DEBUG">http://localhost:54647 "GET /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/6bed1804-8e40-45c5-8c22-daf5ea32e3d4/name HTTP/1.1" 200 18</msg>
+<msg timestamp="20220817 15:04:31.083" level="DEBUG">Remote response: status=200 | data={"value":"button"} | headers=HTTPHeaderDict({'Content-Length': '18', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:31.084" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:31.084" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/6bed1804-8e40-45c5-8c22-daf5ea32e3d4/click {"id": "6bed1804-8e40-45c5-8c22-daf5ea32e3d4"}</msg>
+<msg timestamp="20220817 15:04:31.144" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/6bed1804-8e40-45c5-8c22-daf5ea32e3d4/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220817 15:04:31.145" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:31.145" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:31.145" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:30.973" endtime="20220817 15:04:31.145"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220817 15:04:31.146" level="TRACE">Arguments: [ '4s' ]</msg>
+<msg timestamp="20220817 15:04:35.157" level="INFO">Slept 4 seconds</msg>
+<msg timestamp="20220817 15:04:35.157" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:31.145" endtime="20220817 15:04:35.157"/>
+</kw>
+<status status="PASS" starttime="20220817 15:04:30.970" endtime="20220817 15:04:35.157"/>
+</test>
+<test id="s1-t4" name="Fetch given location temperature" line="66">
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${FETCHED_LOCAL_TEMP}</var>
+<arg>//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[2]/td[1]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220817 15:04:35.159" level="TRACE">Arguments: [ '//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[2]/td[1]/span' ]</msg>
+<msg timestamp="20220817 15:04:35.160" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/elements {"using": "xpath", "value": "//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[2]/td[1]/span"}</msg>
+<msg timestamp="20220817 15:04:36.060" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20220817 15:04:36.060" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"e7470381-cfaf-4863-baa2-14c2438fa523"}]} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:36.061" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:36.061" level="DEBUG">GET http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/e7470381-cfaf-4863-baa2-14c2438fa523/text {"id": "e7470381-cfaf-4863-baa2-14c2438fa523"}</msg>
+<msg timestamp="20220817 15:04:36.097" level="DEBUG">http://localhost:54647 "GET /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/e7470381-cfaf-4863-baa2-14c2438fa523/text HTTP/1.1" 200 16</msg>
+<msg timestamp="20220817 15:04:36.098" level="DEBUG">Remote response: status=200 | data={"value":"23°"} | headers=HTTPHeaderDict({'Content-Length': '16', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:36.099" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:36.099" level="TRACE">Return: '23°'</msg>
+<msg timestamp="20220817 15:04:36.099" level="INFO">${FETCHED_LOCAL_TEMP} = 23°</msg>
+<status status="PASS" starttime="20220817 15:04:35.159" endtime="20220817 15:04:36.099"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${FETCHED_WIND_AMOUNT}</var>
+<arg>//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[6]/td[1]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220817 15:04:36.100" level="TRACE">Arguments: [ '//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[6]/td[1]/span' ]</msg>
+<msg timestamp="20220817 15:04:36.101" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/elements {"using": "xpath", "value": "//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[6]/td[1]/span"}</msg>
+<msg timestamp="20220817 15:04:36.129" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20220817 15:04:36.130" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"93df5eb4-b8a6-4451-84ba-0ea6c1bb3226"}]} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:36.130" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:36.131" level="DEBUG">GET http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/93df5eb4-b8a6-4451-84ba-0ea6c1bb3226/text {"id": "93df5eb4-b8a6-4451-84ba-0ea6c1bb3226"}</msg>
+<msg timestamp="20220817 15:04:36.150" level="DEBUG">http://localhost:54647 "GET /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/93df5eb4-b8a6-4451-84ba-0ea6c1bb3226/text HTTP/1.1" 200 13</msg>
+<msg timestamp="20220817 15:04:36.151" level="DEBUG">Remote response: status=200 | data={"value":"3"} | headers=HTTPHeaderDict({'Content-Length': '13', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:36.151" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:36.151" level="TRACE">Return: '3'</msg>
+<msg timestamp="20220817 15:04:36.151" level="INFO">${FETCHED_WIND_AMOUNT} = 3</msg>
+<status status="PASS" starttime="20220817 15:04:36.100" endtime="20220817 15:04:36.151"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${FETCHED_RAIN_TEXT}</var>
+<arg>//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[10]/td[1]/span/span[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220817 15:04:36.152" level="TRACE">Arguments: [ '//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[10]/td[1]/span/span[1]' ]</msg>
+<msg timestamp="20220817 15:04:36.152" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/elements {"using": "xpath", "value": "//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[10]/td[1]/span/span[1]"}</msg>
+<msg timestamp="20220817 15:04:36.168" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20220817 15:04:36.169" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"5be7d569-d9aa-4f10-a910-5304a5f96b3d"}]} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:36.169" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:36.169" level="DEBUG">GET http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/5be7d569-d9aa-4f10-a910-5304a5f96b3d/text {"id": "5be7d569-d9aa-4f10-a910-5304a5f96b3d"}</msg>
+<msg timestamp="20220817 15:04:36.186" level="DEBUG">http://localhost:54647 "GET /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/5be7d569-d9aa-4f10-a910-5304a5f96b3d/text HTTP/1.1" 200 32</msg>
+<msg timestamp="20220817 15:04:36.186" level="DEBUG">Remote response: status=200 | data={"value":"Precipitation amount"} | headers=HTTPHeaderDict({'Content-Length': '32', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:36.188" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:36.188" level="TRACE">Return: 'Precipitation amount'</msg>
+<msg timestamp="20220817 15:04:36.188" level="INFO">${FETCHED_RAIN_TEXT} = Precipitation amount</msg>
+<status status="PASS" starttime="20220817 15:04:36.151" endtime="20220817 15:04:36.188"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Fetched rain text is</arg>
+<arg>${FETCHED_RAIN_TEXT}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220817 15:04:36.188" level="TRACE">Arguments: [ 'Fetched rain text is' | 'Precipitation amount' ]</msg>
+<msg timestamp="20220817 15:04:36.189" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.188" endtime="20220817 15:04:36.189"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${FETCHED_RAIN_AMOUNT}</var>
+<arg>'${FETCHED_RAIN_TEXT}' == 'Precipitation amount'</arg>
+<arg>Get text</arg>
+<arg>//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[12]/td[1]/div/div[1]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220817 15:04:36.189" level="TRACE">Arguments: [ "'Precipitation amount' == 'Precipitation amount'" | 'Get text' | '//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[12]/td[1]/div/div[1]' ]</msg>
+<kw name="Get Text" library="SeleniumLibrary">
+<arg>//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[12]/td[1]/div/div[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20220817 15:04:36.190" level="TRACE">Arguments: [ '//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[12]/td[1]/div/div[1]' ]</msg>
+<msg timestamp="20220817 15:04:36.190" level="DEBUG">POST http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/elements {"using": "xpath", "value": "//html/body/div/div/div/div[3]/div[4]/div[2]/div/div[2]/div/div/div[1]/div[1]/div[2]/div/div[1]/div/div/table/tbody/tr[12]/td[1]/div/div[1]"}</msg>
+<msg timestamp="20220817 15:04:36.206" level="DEBUG">http://localhost:54647 "POST /session/370eb6132e1b1dabe02c1f5b5f8d4177/elements HTTP/1.1" 200 90</msg>
+<msg timestamp="20220817 15:04:36.206" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"ffa12253-2c24-4407-aff2-1ff833687401"}]} | headers=HTTPHeaderDict({'Content-Length': '90', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:36.207" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:36.207" level="DEBUG">GET http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177/element/ffa12253-2c24-4407-aff2-1ff833687401/text {"id": "ffa12253-2c24-4407-aff2-1ff833687401"}</msg>
+<msg timestamp="20220817 15:04:36.227" level="DEBUG">http://localhost:54647 "GET /session/370eb6132e1b1dabe02c1f5b5f8d4177/element/ffa12253-2c24-4407-aff2-1ff833687401/text HTTP/1.1" 200 15</msg>
+<msg timestamp="20220817 15:04:36.227" level="DEBUG">Remote response: status=200 | data={"value":"0.2"} | headers=HTTPHeaderDict({'Content-Length': '15', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:36.227" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:36.227" level="TRACE">Return: '0.2'</msg>
+<status status="PASS" starttime="20220817 15:04:36.189" endtime="20220817 15:04:36.227"/>
+</kw>
+<msg timestamp="20220817 15:04:36.227" level="TRACE">Return: '0.2'</msg>
+<msg timestamp="20220817 15:04:36.228" level="INFO">${FETCHED_RAIN_AMOUNT} = 0.2</msg>
+<status status="PASS" starttime="20220817 15:04:36.189" endtime="20220817 15:04:36.228"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${FETCHED_RAIN_TEXT}' == 'Precipitation amount'</arg>
+<arg>Set Suite Variable</arg>
+<arg>${LOCAL_RAIN_AMOUNT}</arg>
+<arg>${FETCHED_RAIN_AMOUNT}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220817 15:04:36.229" level="TRACE">Arguments: [ "'Precipitation amount' == 'Precipitation amount'" | 'Set Suite Variable' | '${LOCAL_RAIN_AMOUNT}' | '${FETCHED_RAIN_AMOUNT}' ]</msg>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${LOCAL_RAIN_AMOUNT}</arg>
+<arg>${FETCHED_RAIN_AMOUNT}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:36.230" level="TRACE">Arguments: [ '${LOCAL_RAIN_AMOUNT}' | '${FETCHED_RAIN_AMOUNT}' ]</msg>
+<msg timestamp="20220817 15:04:36.232" level="INFO">${LOCAL_RAIN_AMOUNT} = 0.2</msg>
+<msg timestamp="20220817 15:04:36.232" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.229" endtime="20220817 15:04:36.232"/>
+</kw>
+<msg timestamp="20220817 15:04:36.232" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.228" endtime="20220817 15:04:36.232"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<var>${FETCHED_RAIN_AMOUNT}</var>
+<arg>'${FETCHED_RAIN_TEXT}' == 'Probability and amount of precipitation'</arg>
+<arg>Get text</arg>
+<arg>//*[@id="p_p_id_localweatherportlet_WAR_fmiwwwweatherportlets_"]/div/div/div/div[2]/div/div[1]/div/div[2]/table/tbody/tr[9]/td[1]/span</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220817 15:04:36.233" level="TRACE">Arguments: [ "'Precipitation amount' == 'Probability and amount of precipitation'" | 'Get text' | '//*[@id="p_p_id_localweatherportlet_WAR_fmiwwwweatherportlets_"]/div/div/div/div[2]/div/div[1]/div/div[2]/table/tbody/tr[9]/td[1]/span' ]</msg>
+<msg timestamp="20220817 15:04:36.233" level="TRACE">Return: None</msg>
+<msg timestamp="20220817 15:04:36.233" level="INFO">${FETCHED_RAIN_AMOUNT} = None</msg>
+<status status="PASS" starttime="20220817 15:04:36.233" endtime="20220817 15:04:36.233"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${FETCHED_RAIN_TEXT}' == 'Probability and amount of precipitation'</arg>
+<arg>Set Suite Variable</arg>
+<arg>${LOCAL_RAIN_AMOUNT}</arg>
+<arg>${FETCHED_RAIN_AMOUNT}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<msg timestamp="20220817 15:04:36.234" level="TRACE">Arguments: [ "'Precipitation amount' == 'Probability and amount of precipitation'" | 'Set Suite Variable' | '${LOCAL_RAIN_AMOUNT}' | '${FETCHED_RAIN_AMOUNT}' ]</msg>
+<msg timestamp="20220817 15:04:36.234" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.234" endtime="20220817 15:04:36.234"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${LOCAL_TEMP}</arg>
+<arg>${FETCHED_LOCAL_TEMP}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:36.234" level="TRACE">Arguments: [ '${LOCAL_TEMP}' | '${FETCHED_LOCAL_TEMP}' ]</msg>
+<msg timestamp="20220817 15:04:36.236" level="INFO">${LOCAL_TEMP} = 23°</msg>
+<msg timestamp="20220817 15:04:36.236" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.234" endtime="20220817 15:04:36.236"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${LOCAL_WIND_AMOUNT}</arg>
+<arg>${FETCHED_WIND_AMOUNT}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:36.236" level="TRACE">Arguments: [ '${LOCAL_WIND_AMOUNT}' | '${FETCHED_WIND_AMOUNT}' ]</msg>
+<msg timestamp="20220817 15:04:36.239" level="INFO">${LOCAL_WIND_AMOUNT} = 3</msg>
+<msg timestamp="20220817 15:04:36.239" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.236" endtime="20220817 15:04:36.239"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>.</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220817 15:04:36.239" level="TRACE">Arguments: [ '.' ]</msg>
+<msg timestamp="20220817 15:04:36.240" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.239" endtime="20220817 15:04:36.240"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>***</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220817 15:04:36.240" level="TRACE">Arguments: [ '***' ]</msg>
+<msg timestamp="20220817 15:04:36.240" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.240" endtime="20220817 15:04:36.240"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Temperature in ${LOCATION} is ${LOCAL_TEMP} C</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220817 15:04:36.241" level="TRACE">Arguments: [ 'Temperature in Siuntio is 23° C' ]</msg>
+<msg timestamp="20220817 15:04:36.241" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.240" endtime="20220817 15:04:36.241"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>This windy it is: ${LOCAL_WIND_AMOUNT} m/s</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220817 15:04:36.241" level="TRACE">Arguments: [ 'This windy it is: 3 m/s' ]</msg>
+<msg timestamp="20220817 15:04:36.241" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.241" endtime="20220817 15:04:36.241"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>This rainy it is: ${LOCAL_RAIN_AMOUNT}</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220817 15:04:36.242" level="TRACE">Arguments: [ 'This rainy it is: 0.2' ]</msg>
+<msg timestamp="20220817 15:04:36.242" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.241" endtime="20220817 15:04:36.242"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>***</arg>
+<doc>Logs the given message to the console.</doc>
+<msg timestamp="20220817 15:04:36.242" level="TRACE">Arguments: [ '***' ]</msg>
+<msg timestamp="20220817 15:04:36.242" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.242" endtime="20220817 15:04:36.242"/>
+</kw>
+<status status="PASS" starttime="20220817 15:04:35.158" endtime="20220817 15:04:36.242"/>
+</test>
+<test id="s1-t5" name="Read data from csv file" line="94">
+<kw name="Get File" library="OperatingSystem">
+<var>${ALL_FILE_CONTENT}</var>
+<arg>${OWN_WORKING_DIRECTORY}/mapping_weather_to_clothing.csv</arg>
+<doc>Returns the contents of a specified file.</doc>
+<msg timestamp="20220817 15:04:36.244" level="TRACE">Arguments: [ 'C:/Users/ajukkhei/TIETO/Testiautomaatio/oma_harjoittelu_08_2022/mod02_08_RF_Dress_code_instructor/mapping_weather_to_clothing.csv' ]</msg>
+<msg timestamp="20220817 15:04:36.244" level="INFO" html="true">Getting file '&lt;a href="file://C:\Users\ajukkhei\TIETO\Testiautomaatio\oma_harjoittelu_08_2022\mod02_08_RF_Dress_code_instructor\mapping_weather_to_clothing.csv"&gt;C:\Users\ajukkhei\TIETO\Testiautomaatio\oma_harjoittelu_08_2022\mod02_08_RF_Dress_code_instructor\mapping_weather_to_clothing.csv&lt;/a&gt;'.</msg>
+<msg timestamp="20220817 15:04:36.245" level="TRACE">Return: '\ufeffWarmest possible clothes needed: heavy fur hat,heavy heavy quilted jacket,heavy winter boots\nVery warm clothes needed: woolly hat, normal guilted jacket, normal witer boots\nWarm clothes needed: warm heavy peaked cap, warm heavy weight jacket, normal winter boots\nPeaked cap, normal autumn jacket, running shoes\nNormal summer jacket, summer shoes\nOnly light summer clothing needed: light jacket and summer shorts\nOnly swimming suit needed and sun cream needed to protect skin\n'</msg>
+<msg timestamp="20220817 15:04:36.291" level="INFO">${ALL_FILE_CONTENT} = ﻿Warmest possible clothes needed: heavy fur hat,heavy heavy quilted jacket,heavy winter boots
+Very warm clothes needed: woolly hat, normal guilted jacket, normal witer boots
+Warm clothes needed: warm ...</msg>
+<status status="PASS" starttime="20220817 15:04:36.244" endtime="20220817 15:04:36.291"/>
+</kw>
+<kw name="Find Mappping Table Row" library="Find_right_mapping_table_row_based_on_temperature">
+<var>${ROW_NUM}</var>
+<arg>${LOCAL_TEMP}</arg>
+<msg timestamp="20220817 15:04:36.293" level="TRACE">Arguments: [ '23°' ]</msg>
+<msg timestamp="20220817 15:04:36.294" level="INFO">python got this  temperature 23° for mapping.
+FINALLY python returns mapping table row num 5</msg>
+<msg timestamp="20220817 15:04:36.294" level="TRACE">Return: 5</msg>
+<msg timestamp="20220817 15:04:36.294" level="INFO">${ROW_NUM} = 5</msg>
+<status status="PASS" starttime="20220817 15:04:36.292" endtime="20220817 15:04:36.294"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>ROOOOW NUUUUUMBEEER HERE: ${ROW_NUM}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20220817 15:04:36.296" level="TRACE">Arguments: [ 'ROOOOW NUUUUUMBEEER HERE: 5' ]</msg>
+<msg timestamp="20220817 15:04:36.296" level="INFO">ROOOOW NUUUUUMBEEER HERE: 5</msg>
+<msg timestamp="20220817 15:04:36.297" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.295" endtime="20220817 15:04:36.297"/>
+</kw>
+<kw name="Get Line" library="String">
+<var>${CLOTHING}</var>
+<arg>${ALL_FILE_CONTENT}</arg>
+<arg>${ROW_NUM}</arg>
+<doc>Returns the specified line from the given ``string``.</doc>
+<msg timestamp="20220817 15:04:36.299" level="TRACE">Arguments: [ '\ufeffWarmest possible clothes needed: heavy fur hat,heavy heavy quilted jacket,heavy winter boots\nVery warm clothes needed: woolly hat, normal guilted jacket, normal witer boots\nWarm clothes needed: warm heavy peaked cap, warm heavy weight jacket, normal winter boots\nPeaked cap, normal autumn jacket, running shoes\nNormal summer jacket, summer shoes\nOnly light summer clothing needed: light jacket and summer shorts\nOnly swimming suit needed and sun cream needed to protect skin\n' | 5 ]</msg>
+<msg timestamp="20220817 15:04:36.299" level="TRACE">Return: 'Only light summer clothing needed: light jacket and summer shorts'</msg>
+<msg timestamp="20220817 15:04:36.299" level="INFO">${CLOTHING} = Only light summer clothing needed: light jacket and summer shorts</msg>
+<status status="PASS" starttime="20220817 15:04:36.297" endtime="20220817 15:04:36.300"/>
+</kw>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${SUITE_LEVEL_CLOTHING}</arg>
+<arg>${CLOTHING}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20220817 15:04:36.301" level="TRACE">Arguments: [ '${SUITE_LEVEL_CLOTHING}' | '${CLOTHING}' ]</msg>
+<msg timestamp="20220817 15:04:36.307" level="INFO">${SUITE_LEVEL_CLOTHING} = Only light summer clothing needed: light jacket and summer shorts</msg>
+<msg timestamp="20220817 15:04:36.307" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.300" endtime="20220817 15:04:36.307"/>
+</kw>
+<status status="PASS" starttime="20220817 15:04:36.243" endtime="20220817 15:04:36.308"/>
+</test>
+<test id="s1-t6" name="Report weather data by mail" line="110">
+<kw name="Send Weather Mail" library="Send_email">
+<arg>${LOCATION}</arg>
+<arg>${LOCAL_TEMP}</arg>
+<arg>${LOCAL_WIND_AMOUNT}</arg>
+<arg>${LOCAL_RAIN_AMOUNT}</arg>
+<arg>${SUITE_LEVEL_CLOTHING}</arg>
+<arg>${USERNAME}</arg>
+<arg>${PASSWORD}</arg>
+<arg>${TARGET_EMAIL_ADDRESS}</arg>
+<msg timestamp="20220817 15:04:36.315" level="TRACE">Arguments: [ 'Siuntio' | '23°' | '3' | '0.2' | 'Only light summer clothing needed: light jacket and summer shorts' | 'ajukkhei@gmail.com' | 'sdyupgulgrwkxynd' | 'ajukkhei@gmail.com' ]</msg>
+<msg timestamp="20220817 15:04:38.175" level="INFO">python got this location Siuntio.
+python got this temperature 23.
+python got this rain 1 0.2.</msg>
+<msg timestamp="20220817 15:04:38.176" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:36.312" endtime="20220817 15:04:38.176"/>
+</kw>
+<status status="PASS" starttime="20220817 15:04:36.310" endtime="20220817 15:04:38.177"/>
+</test>
+<test id="s1-t7" name="Write weather data to a text file" line="115">
+<kw name="Create File" library="OperatingSystem">
+<arg>${OWN_WORKING_DIRECTORY}/weather_data_and_clothing_suggestion.txt</arg>
+<arg>Hello.${\n}${\n}Here is the curent weather data at ${LOCATION}: temperature ${LOCAL_TEMP} C , wind ${LOCAL_WIND_AMOUNT} m/s , rain ${LOCAL_RAIN_AMOUNT}${\n}Suggested clothing: ${SUITE_LEVEL_CLOTHING} ${\n}${\n}${\n}${\n}BR. Ronald Robot</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20220817 15:04:38.185" level="TRACE">Arguments: [ 'C:/Users/ajukkhei/TIETO/Testiautomaatio/oma_harjoittelu_08_2022/mod02_08_RF_Dress_code_instructor/weather_data_and_clothing_suggestion.txt' | 'Hello.\r\n\r\nHere is the curent weather data at Siuntio: temperature 23° C , wind 3 m/s , rain 0.2\r\nSuggested clothing: Only light summer clothing needed: light jacket and summer shorts \r\n\r\n\r\n\r\nBR. Ronald Robot' ]</msg>
+<msg timestamp="20220817 15:04:38.188" level="INFO" html="true">Created file '&lt;a href="file://C:\Users\ajukkhei\TIETO\Testiautomaatio\oma_harjoittelu_08_2022\mod02_08_RF_Dress_code_instructor\weather_data_and_clothing_suggestion.txt"&gt;C:\Users\ajukkhei\TIETO\Testiautomaatio\oma_harjoittelu_08_2022\mod02_08_RF_Dress_code_instructor\weather_data_and_clothing_suggestion.txt&lt;/a&gt;'.</msg>
+<msg timestamp="20220817 15:04:38.189" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:38.181" endtime="20220817 15:04:38.189"/>
+</kw>
+<status status="PASS" starttime="20220817 15:04:38.179" endtime="20220817 15:04:38.190"/>
+</test>
+<kw name="Cleanup" type="TEARDOWN">
+<msg timestamp="20220817 15:04:38.195" level="TRACE">Arguments: [  ]</msg>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<msg timestamp="20220817 15:04:38.196" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220817 15:04:38.196" level="DEBUG">Closing browser with session id 370eb6132e1b1dabe02c1f5b5f8d4177.</msg>
+<msg timestamp="20220817 15:04:38.197" level="DEBUG">DELETE http://localhost:54647/session/370eb6132e1b1dabe02c1f5b5f8d4177 {}</msg>
+<msg timestamp="20220817 15:04:38.461" level="DEBUG">http://localhost:54647 "DELETE /session/370eb6132e1b1dabe02c1f5b5f8d4177 HTTP/1.1" 200 14</msg>
+<msg timestamp="20220817 15:04:38.461" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})</msg>
+<msg timestamp="20220817 15:04:38.461" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220817 15:04:42.640" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:38.196" endtime="20220817 15:04:42.641"/>
+</kw>
+<msg timestamp="20220817 15:04:42.641" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220817 15:04:38.194" endtime="20220817 15:04:42.642"/>
+</kw>
+<status status="PASS" starttime="20220817 15:04:01.795" endtime="20220817 15:04:42.642"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" skip="0" id="s1" name="08 Dress Code instructor for outdoor">08 Dress Code instructor for outdoor</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,8 @@
+Hello.
+
+Here is the curent weather data at Siuntio: temperature 23° C , wind 3 m/s , rain 0.2
+Suggested clothing: Only light summer clothing needed: light jacket and summer shorts 
+
+
+
+BR. Ronald Robot
